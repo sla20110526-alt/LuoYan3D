@@ -1,0 +1,397 @@
+schema_version: storyboard-scene-design/v1
+purpose: client_storyboard
+category: advertising
+
+source_layers:
+  user_requirements:
+    - 生成 7.5 秒唯一高潮关键帧的正式 GPT Image 2.5 Prompt。
+    - 最终载体为两块 2.5 米宽、4.5 米高、90 度无边框无接缝拼接的落地 L 形 LED 屏。
+    - 采用 45 度最佳观看点的固定摄影机与固定虚拟空间，高潮帧不得出现产品、包装、品牌文字或标志。
+    - 同一果枝枝梗朝左上并留在主屏深处，果簇端跨越转角朝观众前冲；真实橙色果汁弧面从下方托起果簇。
+    - 第一轮只使用 Blender 空间底图与真实沙棘果枝参考图，暂不使用产品图和带大字海报图。
+  script_facts:
+    - 0–3 秒，小果枝从主屏深处进入，产品不出现。
+    - 3–5 秒，同一果枝向夹角靠近并逐渐变大，下方出现少量果汁细流，产品不出现。
+    - 5–6 秒，果簇接近夹角，枝梗仍留在深处，液体在下方汇聚蓄势，产品不出现。
+    - 6–9 秒，果簇端向观众前冲，液体弧面托起果簇并遮挡屏内虚拟边框，形成全片唯一高潮，产品不出现。
+    - 9–11 秒，果枝短距离回收并向右下落定，液体退去后产品首次揭示。
+    - 11–15 秒，产品保持原位，果枝成为右下陪衬，液体静止，最终文字稳定呈现。
+  optional_references:
+    - Blender 45 度 L 屏虚拟空间底图仅负责几何、画框、透视与甜点位，不要求复制密集网格。
+    - 沙棘果枝照片只负责物种形态、果实密度、叶片形状和自然色泽，忽略照片自带黑边及文字。
+  assumptions:
+    - GPT Image 2.5 生成正方形观众视图测试图，后续再在 Blender 中完成准确的双面反投影与 10:9 展开输出。
+    - 画面外部纯黑区域仅为 L 屏轮廓外的测试留空，不代表实体边框。
+
+scene:
+  id: S01
+  title: 沙棘果簇跨越 L 屏转角
+  script_scope: 15 秒连续广告；固定 45 度甜点位，以同一果枝的接近、爆发、回收和产品揭示完成视觉叙事。
+  task:
+    audience_start: 观众先确认深绿色虚拟房间的稳定纵深，并看到一支真实小果枝从主屏深处进入。
+    audience_end: 观众经历一次果簇与果汁冲出转角的裸眼 3D 高潮后，最终看清主屏上完整可读的产品标签与定版信息。
+    center: 同一果枝在 7.5 秒跨越中央转角并被果汁弧面托起，是全片唯一视觉中心与唯一高潮。
+    emotional_progression: 深处发现→接近期待→短暂停顿→强烈冲出→回收揭示→稳定定版。
+    narrator_rule: 无旁白驱动；只依靠空间纵深、物体尺度、遮挡、跨角运动和液体动力完成信息递进。
+
+information_flow:
+  - id: B01
+    reveal: 真实小果枝从主屏深处进入，枝梗左上、果簇右下。
+    delivery: visual
+    conceal_until: 产品、包装、品牌文字和大规模液体均保持隐藏。
+  - id: B02
+    reveal: 同一果枝接近转角并变大，下方出现少量细流。
+    delivery: visual
+    conceal_until: 果簇不得冲出虚拟前框，产品仍隐藏。
+  - id: B03
+    reveal: 果簇抵近中央折角，枝梗仍锚定深处，液体汇聚蓄势。
+    delivery: visual
+    conceal_until: 唯一高潮动作与产品均保持隐藏。
+  - id: B04
+    reveal: 果簇端在果汁弧面托举下向观众前冲，跨越并遮挡虚拟金线，形成裸眼 3D 爆点。
+    delivery: visual
+    conceal_until: 产品、纸箱、瓶子、品牌文字、标志和下一阶段定版信息全部隐藏至 9 秒以后。
+  - id: B05
+    reveal: 果枝回收并落向右下，液体退去，产品首次出现。
+    delivery: visual
+    conceal_until: 最终品牌文字仍保持隐藏。
+  - id: B06
+    reveal: 产品、右下果枝陪衬、静止液体和最终文字形成完整定版。
+    delivery: visual
+    conceal_until: 无后续信息；保持稳定可读至片尾。
+
+space:
+  anchors:
+    - 两块 2.5 米宽×4.5 米高的竖直 LED 面在中央以 90 度相交，屏幕下沿直接落地，上沿齐平，无顶屏。
+    - 45 度甜点位位于转角平分线方向，计划距离约 6.5 米、眼高约 1.6 米。
+    - 中央竖直折角只表示两屏换面，不得出现边框、立柱、黑缝或发光接缝。
+    - 深绿色虚拟房间的后墙、地面和少量暖金透视线必须在两屏间连续对齐。
+  axes:
+    - 屏幕竖直方向为世界 Z 轴；两屏分别沿互相垂直的水平轴展开。
+    - 果枝主运动轴从主屏深处左上方向，经中央折角，指向甜点位观众。
+    - 回收轴沿原路径后退，再向画面右下方落定。
+  character_positions:
+    - 无人物；主屏深处保存果枝根部与枝梗锚点。
+    - 果簇在高潮时位于中央折角前方的近景空间，部分延伸至侧屏。
+    - 产品仅在 9 秒后位于略偏主屏位置，标签正对甜点位。
+  movement_paths:
+    - 果枝从主屏深处进入并沿左上到右下的斜线接近中央折角。
+    - 6–9 秒果簇端沿折角平分线向观众前冲，枝梗根部仍留在深处，形成明显纵深拉伸。
+    - 果汁从屏幕下部汇聚成跨越两面的连续弧面，向上托举果簇后回落。
+  camera_zones:
+    - 唯一摄影机固定在 45 度甜点位，不推拉、不摇移、不切换机位。
+    - 所有关键帧保持相同 L 屏轮廓、地平线、中央折角位置和消失点。
+
+shots:
+  - id: '01'
+    beat_ids: [B01]
+    purpose: 建立稳定的 L 屏虚拟房间纵深与果枝初始方向。
+    narrator_mode: 无旁白，固定观察。
+    subject: 从主屏深处进入的小型沙棘果枝。
+    shot_scale: 远景中的小主体。
+    viewpoint:
+      mode: 45 度甜点位观众视角
+      holder: 展会现场站立观众
+    camera:
+      position: 中央转角平分线前方约 6.5 米
+      direction: 水平对准两屏中央折角与虚拟房间消失点
+      height: 眼高约 1.6 米
+      angle: 水平 45 度同时观看两块等宽竖屏
+      movement: 完全固定
+    composition:
+      body_crop: 完整果枝可见，周围保留大量虚拟空间。
+      subject_frame_height_pct: 18
+      screen_position: 果枝位于主屏上半部偏左，果簇指向右下但尚未接触折角。
+      foreground: 无近景物，仅有极少虚拟金线。
+      midground: 小型沙棘果枝。
+      background: 深绿色双面连续虚拟房间及稀疏暖金透视线。
+      visible: [两块无缝 L 屏的连续虚拟空间, 小果枝, 枝梗左上果簇右下的方向]
+      hidden: [产品, 包装, 品牌文字, 果汁大弧面]
+    performance:
+      body_direction: 不适用；果枝轴线从左上指向右下。
+      face_direction: 不适用；果簇正面略朝甜点位。
+      eyeline: 不适用；果簇运动目标指向中央折角。
+      start: 果枝刚从主屏深处出现，体量很小。
+      trigger: 枝条缓慢沿斜线向折角漂移。
+      end: 果簇仍在主屏深处，未触碰折角。
+    edit:
+      delta_from_previous: 首镜，建立全部空间与方向基准。
+      cut_motivation: 作为连续动作的 0–3 秒客户关键帧。
+      next_connection: 同一果枝继续沿相同路径靠近中央折角并逐渐变大。
+      intentional_repeat: false
+    continuity:
+      anchors: [固定 L 屏轮廓, 固定折角, 固定消失点, 同一果枝]
+      hard_constraints: [无产品, 无文字, 无实体屏幕边框, 画面外保持纯黑]
+    generation:
+      complexity: complex
+      layout_proxy_required: true
+      layout_proxy: ../renders/gpt_image_reference/04_Lscreen_45deg_virtual_space_base_1536x1536.png
+      style: 高端商业广告级写实 3D CG，深祖母绿色虚拟空间，真实植物材质，暖金光点克制，空间清晰干净。
+      references:
+        - role: supporting
+          label: 真实沙棘果枝参考
+          path: ../图片/沙棘果和树枝.png
+          instructions: 只参考真实沙棘果、细枝和狭长叶片的自然形态与橙绿色泽；忽略并禁止复制照片黑边、字幕及背景。
+
+  - id: '02'
+    beat_ids: [B02]
+    purpose: 增强同一果枝向折角靠近的尺度变化，并首次引入少量液体。
+    narrator_mode: 无旁白，连续固定观察。
+    subject: 接近折角的同一沙棘果枝与少量橙色果汁细流。
+    shot_scale: 中远景。
+    viewpoint:
+      mode: 45 度甜点位观众视角
+      holder: 展会现场站立观众
+    camera:
+      position: 中央转角平分线前方约 6.5 米
+      direction: 水平对准两屏中央折角与虚拟房间消失点
+      height: 眼高约 1.6 米
+      angle: 水平 45 度同时观看两块等宽竖屏
+      movement: 完全固定
+    composition:
+      body_crop: 果枝完整可辨，下方细流完整可见。
+      subject_frame_height_pct: 32
+      screen_position: 果簇位于主屏中央偏折角，枝梗仍在左上深处；细流贴近底部。
+      foreground: 下方少量纤细橙色果汁流线。
+      midground: 逐渐变大的同一果簇。
+      background: 与首镜完全一致的深绿色虚拟房间。
+      visible: [果枝尺度增大, 接近折角的运动方向, 少量果汁细流]
+      hidden: [产品, 包装, 品牌文字, 高潮果汁弧面]
+    performance:
+      body_direction: 不适用；枝梗继续保持左上到右下轴线。
+      face_direction: 不适用；果簇略转向甜点位。
+      eyeline: 不适用；运动目标为中央折角。
+      start: 果枝从首镜位置继续前移。
+      trigger: 果簇靠近折角并通过尺度增长表现前移，下方细流出现。
+      end: 果簇距离折角尚有少量空间，液体仍低矮克制。
+    edit:
+      delta_from_previous: 同一机位下果枝明显放大并靠近折角，下方新增少量液体。
+      cut_motivation: 展示 3–5 秒连续动作的第二阶段。
+      next_connection: 果簇继续抵近折角，液体汇聚并短暂停顿。
+      intentional_repeat: true
+      intentional_repeat_reason: 全片以同一甜点位验证裸眼 3D 连续性，变化来自主体深度、尺度与液体状态而非摄影机。
+    continuity:
+      anchors: [固定 L 屏轮廓, 固定摄影机, 同一果枝身份, 枝梗左上果簇右下]
+      hard_constraints: [无产品, 液体不得形成高潮, 无实体边框, 不改变虚拟房间]
+    generation:
+      complexity: complex
+      layout_proxy_required: true
+      layout_proxy: ../renders/gpt_image_reference/04_Lscreen_45deg_virtual_space_base_1536x1536.png
+      style: 高端商业广告级写实 3D CG，真实沙棘果与透明橙色果汁，深祖母绿色空间，暖金细节克制。
+      references:
+        - role: supporting
+          label: 真实沙棘果枝参考
+          path: ../图片/沙棘果和树枝.png
+          instructions: 只参考真实果实、枝条和叶片形态；禁止照片字幕、黑边和背景进入画面。
+
+  - id: '03'
+    beat_ids: [B03]
+    purpose: 以果簇抵近折角和液体蓄势制造高潮前的瞬间停顿。
+    narrator_mode: 无旁白，连续固定观察。
+    subject: 抵近中央折角的同一果簇与下方汇聚果汁。
+    shot_scale: 中景偏近。
+    viewpoint:
+      mode: 45 度甜点位观众视角
+      holder: 展会现场站立观众
+    camera:
+      position: 中央转角平分线前方约 6.5 米
+      direction: 水平对准两屏中央折角与虚拟房间消失点
+      height: 眼高约 1.6 米
+      angle: 水平 45 度同时观看两块等宽竖屏
+      movement: 完全固定
+    composition:
+      body_crop: 枝梗根部与果簇均保留，底部液体汇聚区完整。
+      subject_frame_height_pct: 46
+      screen_position: 果簇紧邻中央折角中部，枝梗向主屏左上深处延伸；液体集中在折角下方。
+      foreground: 低位汇聚的透明橙色果汁。
+      midground: 紧贴折角但尚未冲出的果簇。
+      background: 稳定的深绿色虚拟房间与少量金色边线。
+      visible: [果簇接近折角, 枝梗仍留深处, 液体汇聚蓄势]
+      hidden: [产品, 包装, 品牌文字, 冲出屏幕的高潮状态]
+    performance:
+      body_direction: 不适用；枝条仍从主屏左上深处斜向中央折角。
+      face_direction: 不适用；近端果实朝向观众。
+      eyeline: 不适用；爆发方向锁定甜点位。
+      start: 果簇继续接近折角，液体开始集中。
+      trigger: 果簇在折角处短暂停顿，液体压低并形成蓄力张力。
+      end: 果簇尚未突破虚拟前框，所有力量集中在爆发前一刻。
+    edit:
+      delta_from_previous: 果簇进一步放大并抵近折角，下方细流收拢成低位液体团。
+      cut_motivation: 展示 5–6 秒高潮前蓄势状态。
+      next_connection: 果簇端与液体弧面同时沿折角平分线向观众爆发。
+      intentional_repeat: true
+      intentional_repeat_reason: 保持相同机位才能让观众通过遮挡与尺度突变感知唯一的空间爆发。
+    continuity:
+      anchors: [同一果枝, 固定折角, 固定虚拟房间, 液体来源位于底部]
+      hard_constraints: [无产品, 无品牌信息, 尚未达到最大近景尺度, 不新增第二支果枝]
+    generation:
+      complexity: complex
+      layout_proxy_required: true
+      layout_proxy: ../renders/gpt_image_reference/04_Lscreen_45deg_virtual_space_base_1536x1536.png
+      style: 高端商业广告写实 3D CG，凝练紧张的空间构图，真实果皮与叶片，透明高黏度橙色果汁。
+      references:
+        - role: supporting
+          label: 真实沙棘果枝参考
+          path: ../图片/沙棘果和树枝.png
+          instructions: 只参考物种真实性和自然色泽；禁止复制参考图中的文字、黑边与环境。
+
+  - id: '04'
+    beat_ids: [B04]
+    purpose: 定格 7.5 秒全片唯一高潮，让果簇与果汁在 45 度甜点位产生强烈的跨角出屏错觉。
+    narrator_mode: 无旁白，以空间爆发完成核心卖点表达。
+    subject: 向观众前冲的同一沙棘果簇、仍锚定深处的枝梗与托举果簇的真实橙色果汁弧面。
+    shot_scale: 极近景空间高潮。
+    viewpoint:
+      mode: 45 度甜点位观众视角的正方形测试画面
+      holder: 展会现场站立观众
+    camera:
+      position: 中央转角平分线前方约 6.5 米
+      direction: 水平对准两屏中央折角与虚拟房间消失点
+      height: 眼高约 1.6 米
+      angle: 水平 45 度同时观看两块 2.5×4.5 米等宽竖屏
+      movement: 完全固定，无推拉、无摇移、无镜头抖动
+    composition:
+      body_crop: 保留左上深处枝梗、跨角果簇和下方完整液体弧面；允许近端少量叶尖与飞溅在画框处自然裁切。
+      subject_frame_height_pct: 78
+      screen_position: 枝梗根部锚定主屏左上深处；硕大果簇集中在中央折角前方并略向侧屏右下延伸，视觉重心位于画面中央偏右；液体弧面横跨两屏下半部。
+      foreground: 最近处的鲜亮橙色沙棘果、少量狭长叶尖、透明高黏度橙金果汁弧面与少数受控液滴；它们遮挡部分虚拟金线，形成出屏层。
+      midground: 同一果枝的后续果实、叶片及从左上深处向折角延伸的枝条，连续跨越两块屏幕且不在折角断裂。
+      background: 深祖母绿色的无缝虚拟房间，只保留少量克制的暖金透视线和柔和体积光，用于显示屏内纵深。
+      visible: [90 度双屏连续虚拟空间, 无黑缝的中央折角, 同一果枝的左上深处锚点, 跨角前冲的真实橙色果簇, 托举果簇的连续果汁弧面, 前景遮挡虚拟金线的裸眼 3D 关系]
+      hidden: [产品瓶, 产品纸箱, 任何包装, 品牌名称, 985 数字, 标志, 标语, 展厅与展台, 人物, 物理屏幕边框, 顶部 LED, 地面 LED]
+    performance:
+      body_direction: 不适用；枝梗轴线从主屏左上深处斜向中央折角，近端果簇沿折角平分线正向观众冲出。
+      face_direction: 不适用；最大、最清晰的一组果实正面略偏主屏但朝甜点位展示，侧屏承接果枝和液体延伸。
+      eyeline: 不适用；所有运动与透视汇聚共同指向 45 度甜点位。
+      start: 果簇刚从折角蓄势位置开始加速，液体从底部抬升。
+      trigger: 果簇端沿折角平分线向观众猛冲，橙色果汁同步形成向上卷起的连续弧面托住果簇，并越过、遮挡少量虚拟金线。
+      end: 定格在冲势最强但形体仍清晰可读的一瞬；果簇最近、枝梗最深、液体弧面完整，画面只有这一处高潮。
+    edit:
+      delta_from_previous: 果簇由折角处的中近景瞬间扩张为极近景，前后景尺度差和遮挡显著增强；液体由低位汇聚跃升为跨屏托举弧面。
+      cut_motivation: 作为 6–9 秒段落中央约 7.5 秒的唯一高潮关键帧，验证转角跨屏与正负视差错觉。
+      next_connection: 果枝沿原路径短距离回收并向右下落定，前景液体下退，9 秒后才首次露出产品。
+      intentional_repeat: true
+      intentional_repeat_reason: 摄影机、L 屏轮廓和虚拟房间必须与前三帧完全一致，高潮只由同一主体的深度爆发、遮挡与尺度变化产生。
+    continuity:
+      anchors: [L 屏轮廓严格匹配 Blender 底图, 中央折角位置与消失点不变, 同一果枝身份与枝梗左上果簇右下方向不变, 枝梗根部始终留在主屏深处, 果汁从下方汇聚并托起果簇]
+      hard_constraints: [输出为单张 1:1 正方形观众视图, 严格服从图1的 L 屏轮廓和 45 度透视, 内容只能出现在 L 屏可见区域内且屏外保持纯黑, 两块屏幕中央换面处连续无黑缝无边框无立柱, 不把虚拟金线画成实体屏幕边框, 不照抄图1密集网格只保留少量优雅金线, 果枝与液体必须在两屏间连续且折角处不变形不截断, 近景果实和液体遮挡虚拟金线以建立正视差出屏感, 背景房间提供负视差纵深, 不出现第二个高潮主体, 不出现产品或任何文字标志, 不生成展厅展台人物或实体地板, 不复制图2的黑边字幕和背景]
+    generation:
+      complexity: complex
+      layout_proxy_required: true
+      layout_proxy: ../renders/gpt_image_reference/04_Lscreen_45deg_virtual_space_base_1536x1536.png
+      style: 超写实高端饮料广告 3D CG，真实沙棘果皮的微小斑点与半透高光、自然灰褐细枝、狭长银绿色叶片，透明高黏度橙金色果汁与受控高光，深祖母绿色虚拟房间，暖金色轮廓光和少量体积光；强烈但可信的空间纵深、精确遮挡、电影级光影，细节清晰，干净高级，单一视觉中心，避免夸张卡通、塑料质感和无意义飞溅。
+      references:
+        - role: supporting
+          label: 真实沙棘果枝参考
+          path: ../图片/沙棘果和树枝.png
+          instructions: 严格参考真实沙棘果实的小而密集、亮橙色略有斑点、细灰褐枝条和狭长银绿色叶片；只取植物形态与自然色泽，忽略并禁止复制照片的黑色上下边、中文字幕、景深背景和原构图。
+
+  - id: '05'
+    beat_ids: [B05]
+    purpose: 高潮后回收果枝和液体，并首次揭示产品。
+    narrator_mode: 无旁白，以遮挡退去完成产品揭示。
+    subject: 略偏主屏的产品瓶与退至右下的同一果枝。
+    shot_scale: 中近景产品英雄镜头。
+    viewpoint:
+      mode: 45 度甜点位观众视角
+      holder: 展会现场站立观众
+    camera:
+      position: 中央转角平分线前方约 6.5 米
+      direction: 水平对准两屏中央折角与虚拟房间消失点
+      height: 眼高约 1.6 米
+      angle: 水平 45 度同时观看两块等宽竖屏
+      movement: 完全固定
+    composition:
+      body_crop: 产品瓶完整可见，果枝与回落液体作为右下陪衬。
+      subject_frame_height_pct: 62
+      screen_position: 产品瓶首次出现在主屏中央偏折角但整体略偏主屏，标签正面完整；果枝落在右下并跨向侧屏。
+      foreground: 下退中的果汁与少量右下果实。
+      midground: 完整产品瓶。
+      background: 稳定深绿色虚拟房间。
+      visible: [完整产品瓶, 标签完整正对甜点位, 回收后的右下果枝, 退去的液体]
+      hidden: [产品纸箱, 最终品牌大字, 展厅环境, 人物]
+    performance:
+      body_direction: 不适用；产品瓶竖直稳定，果枝向右下回收。
+      face_direction: 标签正面朝向 45 度甜点位并略偏主屏。
+      eyeline: 不适用；视觉中心由果簇转移到产品标签。
+      start: 果簇与液体仍占据部分近景。
+      trigger: 果枝沿原路径短距离后退并向右下落定，液体向下回落。
+      end: 产品首次完整显露，标签无遮挡可读。
+    edit:
+      delta_from_previous: 极近景果簇和液体退去，主屏产品瓶首次成为视觉中心。
+      cut_motivation: 将唯一高潮自然转化为产品首次揭示。
+      next_connection: 产品位置不变，液体进一步静止，最终品牌文字出现。
+      intentional_repeat: true
+      intentional_repeat_reason: 保持同一甜点位和虚拟空间，使产品揭示看起来来自前景遮挡的真实退去。
+    continuity:
+      anchors: [固定摄影机, 同一果枝回收路径, 产品略偏主屏, 标签朝甜点位]
+      hard_constraints: [产品 9 秒前不得出现, 标签不可变形不可遮挡, 无实体屏幕边框, 不出现第二个产品]
+    generation:
+      complexity: complex
+      layout_proxy_required: true
+      layout_proxy: ../renders/gpt_image_reference/04_Lscreen_45deg_virtual_space_base_1536x1536.png
+      style: 超写实高端饮料广告 3D CG，真实玻璃瓶、橙色沙棘汁、深绿与米色标签，余留果汁高光，稳定高级。
+      references:
+        - role: character_identity
+          label: 沙棘之恋产品瓶参考
+          path: ../图片/产品.png
+          instructions: 只使用参考图中的单瓶产品，严格保持瓶型、银色瓶盖、橙色液体、深绿米色标签和 985 核心版式；不要生成纸箱，标签须完整可读并正对甜点位。
+        - role: supporting
+          label: 真实沙棘果枝参考
+          path: ../图片/沙棘果和树枝.png
+          instructions: 只参考真实果实、枝条与叶片形态，禁止照片文字、黑边与背景。
+
+  - id: '06'
+    beat_ids: [B06]
+    purpose: 形成稳定、完整、可读的产品定版。
+    narrator_mode: 无旁白，品牌信息稳定停留。
+    subject: 略偏主屏的产品瓶、右下沙棘果枝、静止液体与最终品牌文字。
+    shot_scale: 中近景定版。
+    viewpoint:
+      mode: 45 度甜点位观众视角
+      holder: 展会现场站立观众
+    camera:
+      position: 中央转角平分线前方约 6.5 米
+      direction: 水平对准两屏中央折角与虚拟房间消失点
+      height: 眼高约 1.6 米
+      angle: 水平 45 度同时观看两块等宽竖屏
+      movement: 完全固定
+    composition:
+      body_crop: 产品瓶完整、果枝完整陪衬、文字留足安全区。
+      subject_frame_height_pct: 60
+      screen_position: 产品瓶略偏主屏并保持标签完整，果枝在右下跨向侧屏，品牌文字位于主屏上方安全区。
+      foreground: 静止的低位果汁与少量果实。
+      midground: 完整产品瓶与右下果枝。
+      background: 稳定深绿色虚拟房间及最终文字安全区。
+      visible: [完整产品瓶, 可读标签, 右下果枝陪衬, 静止液体, 最终品牌文字]
+      hidden: [展厅环境, 人物, 纸箱, 额外产品]
+    performance:
+      body_direction: 不适用；产品竖直稳定，果枝静止。
+      face_direction: 标签持续正对甜点位。
+      eyeline: 不适用；视觉层级为品牌文字、产品标签、右下陪衬。
+      start: 产品已揭示，液体仍有极轻微回落。
+      trigger: 液体完全静止，品牌文字淡入并稳定。
+      end: 产品、文字与果枝保持完整清晰至 15 秒结束。
+    edit:
+      delta_from_previous: 产品位置保持，液体由回落转为静止，新增最终品牌文字。
+      cut_motivation: 完成 11–15 秒广告定版与信息记忆。
+      next_connection: 片尾保持，无下一镜。
+      intentional_repeat: true
+      intentional_repeat_reason: 产品定版必须继承揭示镜头的同一机位与产品位置，变化仅为液体停止和文字出现。
+    continuity:
+      anchors: [固定产品位置, 标签正对甜点位, 右下果枝位置, 固定 L 屏轮廓]
+      hard_constraints: [产品标签完整清晰, 最终文字位于安全区, 不新增纸箱或第二瓶, 无屏幕实体边框]
+    generation:
+      complexity: complex
+      layout_proxy_required: true
+      layout_proxy: ../renders/gpt_image_reference/04_Lscreen_45deg_virtual_space_base_1536x1536.png
+      style: 超写实高端饮料广告 3D CG，深祖母绿色品牌空间，暖金与橙色点缀，稳定、干净、标签清晰、适合片尾定版。
+      references:
+        - role: character_identity
+          label: 沙棘之恋产品瓶参考
+          path: ../图片/产品.png
+          instructions: 严格保持单瓶产品的瓶型、银色瓶盖、橙色液体、标签色彩与 985 版式；不要生成纸箱，标签须完整朝向甜点位。
+        - role: supporting
+          label: 真实沙棘果枝参考
+          path: ../图片/沙棘果和树枝.png
+          instructions: 只参考果实与叶片真实性，不复制文字、黑边和照片背景。

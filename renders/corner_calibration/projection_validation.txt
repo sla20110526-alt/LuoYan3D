@@ -1,0 +1,18 @@
+L-SHAPED LED CORNER CALIBRATION / PROJECTION VALIDATION
+========================================================
+Sweet spot E = (3.250000, -5.629165, 1.600000) m
+Main LED = 3.000 x 4.500 m; output 600 x 900
+Side LED = 2.000 x 4.500 m; output 400 x 900
+Packed canvas = 1000 x 900 (main left, side right)
+
+Main camera: lens=67.549980 mm shift_x=-1.583333373 shift_y=0.216666654
+Main target bounds={'left': -6.25, 'right': -3.25, 'bottom': -1.600000023841858, 'top': 2.9000000953674316, 'distance': 5.629165172576904}
+Main rendered bounds={'left': -6.250000953674316, 'right': -3.250000476837158, 'bottom': -1.600000262260437, 'top': 2.9000000953674316, 'distance': 5.629165172576904}
+Main max error=0.000000953674 m
+
+Side camera: lens=58.500000 mm shift_x=3.314582586 shift_y=0.324999988
+Side target bounds={'left': 5.629165172576904, 'right': 7.629165172576904, 'bottom': -1.600000023841858, 'top': 2.9000000953674316, 'distance': 3.25}
+Side rendered bounds={'left': 5.629165172576904, 'right': 7.629165172576904, 'bottom': -1.600000023841858, 'top': 2.9000000953674316, 'distance': 3.25}
+Side max error=0.000000000000 m
+
+PASS

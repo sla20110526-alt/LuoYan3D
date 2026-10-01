@@ -1,0 +1,21 @@
+SEABUCKTHORN L-SCREEN INVERSE-PROJECTION VALIDATION
+===================================================
+Source target: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\图片\资产\沙棘时空盒_1比1双屏轮廓适配_候选v3.png
+Physical LED: 2.5m x 4.5m main + 2.5m x 4.5m side, 90 degrees
+Sweet spot: 45-degree bisector, plan radius 6.5m, eye height 1.6m
+Target view: 1254 x 1254
+Main prewarp: 1000 x 1800
+Side prewarp: 1000 x 1800
+Packed controller canvas: 2000 x 1800
+
+Main projected quad px: [[269.2914542555809, 1095.0624178051949], [626.4998879730701, 1185.2856489941478], [626.5, 62.79751706123352], [285.8938452601433, 209.5829677581787]]
+Side projected quad px: [[626.4998879730701, 1185.2856489941478], [983.7083963751793, 1095.0624551475048], [967.1060800552368, 209.58304244279861], [626.5, 62.79751706123352]]
+
+Round-trip RGB MAE inside LED mask: 0.00831881
+Round-trip RGB RMSE inside LED mask: 0.02207319
+Round-trip PSNR inside LED mask: 33.123 dB
+Non-black source pixels outside physical LED silhouette: 16.971%
+Mean source brightness outside physical LED silhouette: 0.00947942
+
+PASS_CRITERION: reprojection visually restores the target inside the exact physical LED polygons.
+IMPORTANT: source details outside the physical LED silhouette cannot be displayed and are intentionally clipped.

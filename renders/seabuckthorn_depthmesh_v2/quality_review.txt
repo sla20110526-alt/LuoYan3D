@@ -1,0 +1,18 @@
+SEABUCKTHORN 7.5 S DEPTH-MESH PROTOTYPE
+======================================
+Physical LED: 2.5 m x 4.5 m + 2.5 m x 4.5 m, 90 degrees, floor-mounted.
+Viewpoint: 45-degree bisector, 6.5 m from corner, 1.6 m eye level (provisional).
+No white frame, physical bezel, floor LED or top LED.
+Mesh source: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\图片\沙棘果枝果汁_透明前景_v1.png
+Depth from eye: 5.100 to 6.450 m.
+Physical screen roundtrip RGB MAE: 0.006197.
+Panel edge RGB MAE: 0.000002.
+STATUS: numerical geometry checked; visual acceptance requires inspection of render.
+VISUAL CHECK (2026-09-24): PARTIAL PASS / NOT CLIENT FINAL.
+- The prior rectangular source-image patch is gone; the physical L is fully active content.
+- No white portal frame or physical bezel is visible.
+- Branch, berries and juice remain continuous across the 90-degree fold at the fixed 45-degree viewpoint.
+- Sparse room/floor perspective lines recede behind the fruit and are hidden by the splash, providing a depth cue.
+- However the generated foreground is still one textured, deformable 2.5D mesh; the fruit/liquid silhouette has no independent texture layers for high-quality animation.
+- Fine cutout-edge artifacts remain. The nominal 1000x1800 per panel is a simulation grid, not a confirmed LED processor pixel map.
+- Do not call this a completed 15-second video or a client-approved final effect.

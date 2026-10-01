@@ -1,0 +1,15 @@
+VISUAL REVIEW — 2026-09-24
+==========================
+The uploaded foreground PNG and the project copy 沙棘果枝果汁_透明前景_v1.png have the same SHA-256 hash.
+
+Reviewed Blender 45-degree sweet-spot reprojection and landscape preview after final render:
+- The apparent top bronze lid and bottom bronze base remain distinct from the sandy side walls.
+- The fruit branch and juice form one continuous shape across the 90-degree physical corner; no visible doubled seam or abrupt split.
+- Leaves and juice cross the virtual gold side rails into the dark active-screen band.
+- Foreground clipping at the actual physical LED outline: zero sampled pixels.
+- The outer silhouette is the two floor-mounted vertical screens only; there is no physical top or floor LED in the Blender scene.
+- The generated box concept's near-black outer edge is only approximate. It is clipped by the exact physical LED mask, not adopted as physical geometry.
+- The original cutout has slight bright/color fringe along some fine edges, still visible on close inspection.
+- This static view verifies inverse projection from the provisional sweet spot. It does not verify an animated out-of-screen trajectory, multi-view performance, or final hardware pixel mapping.
+
+VERDICT: static two-screen inverse-projection check passes at the provisional sweet spot; not final delivery media.

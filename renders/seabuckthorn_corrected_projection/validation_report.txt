@@ -1,0 +1,20 @@
+CORRECTED SEABUCKTHORN L-SCREEN VALIDATION
+=========================================
+Source: C:\Users\观照\Downloads\沙棘合成效果图02.png
+Source resolution: 1254 x 1254
+Correction: AI-redrawn panel quads registered to exact Blender LED quads
+Border correction: source sampling inset removes the generated outer gold frame
+Artwork safety: 8% inset union polygon; center fold remains available for cross-corner action
+
+Main output: 1000 x 1800
+Side output: 1000 x 1800
+Packed output: 2000 x 1800
+
+Corrected non-black pixels outside exact LED silhouette: 0.00000%
+Orange/gold pixels outside 8% safe zone (mostly intentional edge-reaching liquid): 58.949%
+Round-trip RGB MAE: 0.00834483
+Round-trip RGB RMSE: 0.01705581
+Round-trip PSNR: 35.363 dB
+
+GEOMETRY_RESULT: PASS if the corrected target and Blender reprojection are visually identical inside the LED mask.
+ART_RESULT: PASS for the hero fruit cluster; decorative liquid and a few leaf tips cross the safe line intentionally but remain inside the exact physical LED silhouette.

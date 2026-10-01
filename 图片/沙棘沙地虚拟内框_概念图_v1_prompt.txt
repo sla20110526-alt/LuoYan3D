@@ -1,0 +1,16 @@
+Generation mode: built-in image_gen, reference-guided edit.
+
+Input image 1 (edit target):
+C:\Users\观照\.codex\generated_images\01a0b401-7b52-77c2-bb47-9df95389aa12\exec-c78ad6c0-c0fa-4fad-9750-e80a582ddca5.png
+
+Input image 2 (physical-screen geometry guide):
+D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\renders\gpt_image_reference\04_Lscreen_45deg_virtual_space_base_1536x1536.png
+
+Final prompt:
+Use case: precise-object-edit. Asset type: revised single concept image for the INNER VIRTUAL FRAME on an L-shaped LED display. Image 1 is the edit target: retain its elegant champagne-gold edge style, sand landscape, centered 90-degree two-wall corner and warm lighting. Image 2 is the mandatory guide for the physical two-panel L-shaped screen silhouette and 45-degree camera. Targeted correction: the existing gold frame in Image 1 is incorrectly on the OUTER physical screen edge. Move the entire gold portal inward so it occupies only about 70-75% of the height and 70-75% of each projected panel width. Outside it, but still INSIDE the full L-shaped LED silhouette of Image 2, leave a clearly visible broad continuous matte near-black / very dark charcoal LED-content band, about 12-15% of screen height at top and bottom and 10-15% of the width at the left and right outer sides. This dark area is usable picture space for later fruit and juice overflow; it is NOT a physical bezel. No gold, bronze or white lines may touch the physical outer LED silhouette. Preserve a crisp top V, bottom V and two outer side edges on the inner portal; do not draw a vertical gold line at the center fold. Adjust landscape to a realistic semi-arid sandy sea-buckthorn habitat: fine wind-rippled sand, pale sandy-gravel patches, low dry dunes and only subtle sparse scrub in the distance, rather than an endless Sahara desert; keep the central portal visually quiet for later compositing. The apparent ceiling and floor are perspective illusions within the two vertical panels, no real horizontal display. Output one square 45-degree sweet-spot view with symmetrical physical L shape against pure black exterior. No fruit, juice, sea-buckthorn branch, bottle, product, logo, writing, physical cabinet, outer metal frame, mountain mural, white trim, or center seam. Prioritize an unmistakable dark active-screen margin OUTSIDE the recessed gold inner portal.
+
+Visual review:
+- Gold portal is visibly inset from the outer active LED silhouette.
+- Outer dark LED area is reserved for future splash/leaf overflow.
+- No white frame or central gold vertical rail.
+- This is a visual concept, not calibrated panel content; geometric correction must be performed in Blender before screen playback.

@@ -1,0 +1,10 @@
+VISUAL QUALITY CHECK — FAILED
+=============================
+The white outline is gone, and the two panel textures meet numerically, but
+the sweet-spot render still reads as a rectangular picture patch on a dark
+L-shaped screen. The source's green room and gold grid expose that patch.
+On the right, some leaf and juice details are clipped or visually detached at
+the former guide boundary. The berry cluster, branch, and juice remain a
+single flattened RGB image, so the render does not establish independent
+front/back depth or a convincing out-of-screen hero effect.
+Do not use this version as a client-facing naked-eye-3D approval image.

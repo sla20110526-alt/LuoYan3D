@@ -1,0 +1,14 @@
+SEABUCKTHORN WITH INVISIBLE LAYOUT GUIDE
+=======================================
+VISUAL QUALITY RESULT: FAIL — do not use as a client-facing 3D approval image.
+Reason: visible rectangular image patch, detached/clipped overflow and flat source depth.
+Source artwork: C:\Users\观照\Downloads\沙棘合成效果图02.png
+Physical LED: 2.5m x 4.5m main + 2.5m x 4.5m side, 90 degrees.
+Main content: projectively placed using the former white outline as an invisible guide.
+Visible white outline: none; source background fades into the dark LED field.
+Overflow: right-side leaf and juice droplets stay visible in the outer dark LED area.
+No artwork is intentionally placed beyond the physical LED boundary.
+Main overflow pixels: 0
+Side overflow pixels: 97832
+Panel-seam RGB mean absolute difference (0..1): 0.000000
+Status: still-frame composition and sweet-spot preview; perceived depth remains viewpoint-dependent.

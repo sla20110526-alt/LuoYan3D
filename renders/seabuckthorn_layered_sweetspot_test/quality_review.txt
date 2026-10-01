@@ -1,0 +1,12 @@
+LAYER-SEPARATED SEA-BUCKTHORN SWEET-SPOT TEST
+=============================================
+VISUAL VERDICT: placement test only; FAIL as a finished naked-eye-3D effect.
+Do not send this frame to the client as final approval artwork.
+Transparent foreground: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\图片\沙棘果枝果汁_透明前景_v1.png
+Background: procedurally built continuous dark LED scene; no white frame and no rectangular source-photo edge.
+Foreground: one planar transparent layer with uniform image scale, preserving berry shape in the sweet-spot target.
+Projection: exact Blender 2.5m x 4.5m + 2.5m x 4.5m panels at 90 degrees.
+Foreground pixels clipped by physical screen: 0/313274 (0.000%).
+Packed panel seam RGB MAE: 0.000003.
+Sweet-spot reprojection RGB MAE: 0.009222.
+QUALITY LIMIT: a single foreground cutout has no independently controllable branch, berry and juice depth; this is a placement test, not a finished 3D hero frame.

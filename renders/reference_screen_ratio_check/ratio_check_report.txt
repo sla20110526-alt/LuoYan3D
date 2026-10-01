@@ -1,0 +1,17 @@
+REFERENCE OUTER-SCREEN VS CURRENT BLENDER MODEL
+================================================
+Interpretation: the outer black hexagon is the complete LED screen; the inner white frame is virtual content.
+Blender model: two equal 2.5m x 4.5m panels, 90-degree corner.
+Blender view: 45-degree bisector, 6.5m plan radius, eye height 1.6m.
+Comparison method: equalize outer-screen projected height, preserve each silhouette's width/height proportion.
+
+Reference image size: 2048 x 1156
+Reference projected outer width/height: 0.765306
+Current Blender projected outer width/height: 0.636698
+Reference appears wider than current Blender model by: 20.199% at equal projected height
+Reference top V-depth: 94.000px; fitted Blender top V-depth: 140.968px
+Reference bottom V-depth: 104.000px; fitted Blender bottom V-depth: 86.647px
+
+RESULT: NOT AN EXACT MATCH in the current calibrated view.
+The physical panel ratio may still be compatible with equal 2.5m x 4.5m faces, but the reference uses a farther/higher-looking viewpoint and a wider, shallower projected silhouette.
+Overlay colors: magenta = supplied reference outer screen; cyan = current Blender silhouette fitted to the same height.

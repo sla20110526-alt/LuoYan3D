@@ -1,0 +1,22 @@
+MAGIC BOX + SEA-BUCKTHORN BLENDER INVERSE-PROJECTION TEST
+========================================================
+Background: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\图片\沙棘沙地时空盒内框_概念图_v2.png
+Foreground: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\图片\沙棘果枝果汁_透明前景_v1.png
+Foreground transform in sweet-spot canvas: scale=0.520, left=301.0, top=328.0 px.
+Physical LEDs: 2.5 m x 4.5 m + 2.5 m x 4.5 m, vertical, 90 degrees; no physical top/floor LED.
+Nominal viewer: 45-degree bisector, 6.5 m from corner, eye height 1.6 m.
+Main projected quad: [[ 269.29 1095.06]
+ [ 626.5  1185.29]
+ [ 626.5    62.8 ]
+ [ 285.89  209.58]]
+Side projected quad: [[ 626.5  1185.29]
+ [ 983.71 1095.06]
+ [ 967.11  209.58]
+ [ 626.5    62.8 ]]
+Subject pixels outside physical LED: 0/213427 (0.0000%).
+Subject pixels outside approximate inner side-frame but inside LED: 3940.
+Blender round-trip RGB MAE inside physical LED: 0.014037.
+Packed corner-edge RGB MAE: 0.000003.
+Concept silhouette bright pixels outside exact LED: 14322; dark/missing within LED: 18209.
+NOTE: 1000x1800 per panel is a TEST raster, not the client's confirmed controller pixel map.
+VISUAL STATUS: pending inspection; numeric agreement alone is not a naked-eye-3D effect approval.

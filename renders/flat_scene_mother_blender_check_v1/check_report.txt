@@ -1,0 +1,20 @@
+FLAT SCENE MOTHER / EXISTING BLENDER LED CHECK
+Source blend: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\Lscreen_magicbox_SCREEN_MODEL_READY.blend
+Candidate: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\图片\资产\沙棘时空盒_1比1双屏展开平面_候选v1.png
+Candidate size: 1254 x 1254
+Active square crop: y=62:1191, size=1254 x 1129
+Each panel texture: 627 x 1129
+Physical model: original 2.5m x 4.5m main and side LED faces, 90 degrees
+No inverse projection applied: testing the generated unfolded art directly on the LED UVs.
+Sweet-spot camera and screen geometry are inherited from the existing blend.
+Check blend: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\Lscreen_magicbox_FLAT_SCENE_CANDIDATE_CHECK.blend
+Sweet-spot render: D:\Ai影视制作\2026项目\002-2026项目\022-裸眼3D项目\renders\flat_scene_mother_blender_check_v1\04_sweetspot_on_existing_LED.png
+This is a static simulated viewpoint, not final site/controller acceptance.
+
+VISUAL RESULT: FAIL AS FINAL SCENE MAP
+- The original 2.5m x 4.5m, 90-degree LED geometry rendered correctly, and the candidate image was physically attached to both faces.
+- At the sweet spot the copper lid and the gold enclosure become a box-like image, but the circular oculus folds into a pointed V/heart shape rather than the intended oval.
+- The sun becomes vertically elongated; the base swirl pinches and breaks across the screen corner.
+- The near dunes acquire a hard V-shaped crease at the corner, and the black margin outside the inner gold frame is narrow at the two outer sides.
+- Root cause: the AI-generated flat artwork is only a visual approximation of an unfolded map. Splitting it into two equal halves is not a substitute for inverse projection of the desired sweet-spot image.
+- Conclusion: keep this candidate as a layout test, not the approved scene master or final panel playback image. Use the existing Blender camera and inverse projection for exact two-face artwork.

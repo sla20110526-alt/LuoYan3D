@@ -1,0 +1,11 @@
+SEABUCKTHORN IN WHITE VIRTUAL PORTAL
+===================================
+Source artwork: C:\Users\观照\Downloads\沙棘合成效果图02.png
+Physical LED: 2.5m x 4.5m main + 2.5m x 4.5m side, 90 degrees.
+Main content: projectively fitted to the white virtual aperture.
+Overflow: colored fruit, juice and leaves from the same source sampled over the virtual rim and outer dark LED area.
+No artwork is intentionally placed beyond the physical LED boundary.
+Main overflow pixels: 0
+Side overflow pixels: 102745
+Panel-seam RGB mean absolute difference (0..1): 0.000000
+Status: still-frame composition and sweet-spot preview; perceived depth remains viewpoint-dependent.

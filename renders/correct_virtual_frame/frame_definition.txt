@@ -1,0 +1,12 @@
+CORRECT VIRTUAL FRAME DEFINITION
+================================
+Physical LED: two equal 2.5m x 4.5m vertical faces at 90 degrees.
+Outer dark L-shaped polygon: entire active LED surface, not a bezel.
+Inner white portal frame: virtual screen content only.
+White-room interior: recessed virtual box rendered inside the portal.
+Overflow rule: later fruit, leaves and juice may cross the white portal frame but must remain inside the outer physical LED silhouette.
+No top LED, no floor LED, no physical frame and no center seam object.
+No product, fruit, liquid, text or logo included in this frame-only deliverable.
+The supplied reference is used for the virtual white-room style and aperture spacing.
+Its outer silhouette is wider than the confirmed 2.5m + 2.5m x 4.5m LED geometry
+when seen from the provisional 6.5m/1.6m sweet spot; physical geometry takes precedence.

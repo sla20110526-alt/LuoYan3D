@@ -1,0 +1,11 @@
+REAL PHYSICAL L LED MESH CHECK
+Main quad world vertices: [(-2.5, 0.0, 0.0), (0.0, 0.0, 0.0), (0.0, 0.0, 4.5), (-2.5, 0.0, 4.5)]
+Side quad world vertices: [(0.0, 0.0, 0.0), (0.0, 2.5, 0.0), (0.0, 2.5, 4.5), (0.0, 0.0, 4.5)]
+Main edges (m): [2.5, 4.5, 2.5, 4.5]
+Side edges (m): [2.5, 4.5, 2.5, 4.5]
+Face-normal angle (deg): 90.00000
+Shared bottom / top corner distance (m): 0.000000 / 0.000000
+Floor contact Z (m): 0.000000
+Main texture: EDITABLE_BOX_MAIN (1000, 1800) packed=True
+Side texture: EDITABLE_BOX_SIDE (1000, 1800) packed=True
+Pixel dimensions above are for simulation, not the customer's approved controller map.
